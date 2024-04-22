@@ -12,7 +12,7 @@ message.write("Hello I'm DeltaPi Chatbot, what can I do for you?")
 groq_api_key = st.secrets["my_api_key"]
 
 model = st.sidebar.selectbox(
-    'Select your LPU AI model (powered by Groq)', ("mixtral-8x7b-32768", "llama2-70b-4096", "gemma-7b-it") )
+    'Select your LPU AI model (powered by Groq)', ("mixtral-8x7b-32768", "llama2-70b-4096", "gemma-7b-it","llama3-70b-8192") )
 
 instructions = st.sidebar.text_area("Instructions", value="")
 
